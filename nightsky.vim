@@ -17,11 +17,11 @@ let g:colors_name="northsky"
 
 
 " Search & normal
-hi Normal		guifg=GhostWhite guibg=black 
+hi Normal		guifg=GhostWhite guibg=gray10
 hi Search		guibg=#3D5B8C guifg=yellow gui=bold 
 hi IncSearch	guifg=bg guibg=cyan gui=bold 
 if &t_Co == "256"
-	hi Normal		ctermfg=255 ctermbg=16
+	hi Normal		ctermfg=255 ctermbg=234
 	hi Search		ctermfg=226 ctermbg=60
 	hi IncSearch	ctermfg=16 ctermbg=51
 else
@@ -122,7 +122,7 @@ hi DiffChange	guibg=aquamarine4
 hi DiffDelete	gui=bold guifg=Yellow guibg=DarkBlue
 hi DiffText		gui=bold guibg=#940303
 hi Directory	guifg=Cyan
-hi LineNr		guifg=DarkGreen
+hi LineNr		guifg=DarkGray guibg=#333333
 hi WildMenu		guifg=Black guibg=Yellow
 hi lCursor		guibg=SeaGreen1 guifg=NONE
 hi Underlined	gui=underline guifg=#80a0ff
@@ -134,7 +134,7 @@ if &t_Co == "256"
 	hi DiffDelete	ctermfg=226 ctermbg=18
 	hi DiffText		ctermbg=88
 	hi Directory	ctermfg=51
-	hi LineNr		ctermfg=22
+	hi LineNr		ctermfg=244 ctermbg=238
 	hi WildMenu		ctermfg=16 ctermbg=226
 	hi lCursor		ctermbg=85
 	hi Underlined	ctermfg=111
