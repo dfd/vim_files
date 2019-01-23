@@ -1,3 +1,9 @@
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
 call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'tpope/vim-sensible'
@@ -37,6 +43,7 @@ Plug 'honza/vim-snippets'
 Plug 'https://github.com/christoomey/vim-tmux-navigator'
 Plug 'ekalinin/Dockerfile.vim'
 "Plug 'powerline/powerline'
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 call plug#end()
 
 
